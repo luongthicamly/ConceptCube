@@ -1,0 +1,64 @@
+.second-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b0080;
+    overflow: hidden;
+    .second-page-container{
+        padding-left: 32px;
+        width: 100%;
+    }
+   .bg-second-page{
+        font-family: "Montserrat-SemiBold";
+        color: #99dd6e;
+        font-size: 281px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.96;
+        letter-spacing: normal;
+        text-align: left;
+   }
+   .second-page-content{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 99999;
+        color: white;
+        width: 100%;
+        height: 100%;
+        .slider-second-page{
+            margin-top: 230px;
+            
+            .slick-slider{
+                width: 526px;
+                margin: 0 auto;
+                img{
+                    margin: 0 auto;
+                }
+            }
+            .slick-dots li button:before{
+                color: white;
+            }
+            .slick-next {
+                right: 15px;
+            }
+            .slick-prev {
+                left: 15px;
+                z-index: 9999;
+            }
+        }
+   }
+}
+@media screen and (max-height: 1079px) {
+    .second-container {
+       .bg-second-page{
+            font-size: 240px;
+       }
+       .slider-second-page{
+           margin-top: 200px !important;
+       }
+    }
+}

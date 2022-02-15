@@ -1,0 +1,205 @@
+{
+    "address": "411-A, IT-belly, 40, Imi-ro, Uiwang-si, Gyeonggi-do, Republic of Korea",
+    "address2": "411-A, IT-belly, 40, Imi-ro, Uiwang-si, Gyeonggi-do, Republic of Korea ",
+    "address3": "Dosan-daero",
+    "second": {
+        "number1": "1.",
+        "number2": "2.",
+        "number3": "3.",
+        "number4": "4.",
+        "textWhite1": "device manufacturer.",
+        "textWhite2": "Production and Sales of",
+        "textWhite21": "igh-",
+        "textWhite22": "erformance ",
+        "textWhite24": "ervers with self - manufactured system device. ",
+        "textWhite31": "Construction of operative",
+        "textWhite32": "based on HPS. ",
+        "textWhite4": "Establish solu-tion relating to Blockchain",
+        "textYellow1": "Self - produced",
+        "textYellow2": "H",
+        "textYellow21": "P",
+        "textYellow22": "S",
+        "textYellow3": "Block chain IDC ",
+        "textYellow4": "IPFS "
+    },
+    "fourth": {
+        "story": [
+            {
+                "id": 0,
+                "title": "History",
+                "children": [
+                    {
+                        "id": 0,
+                        "title": "2021",
+                        "type": "Changed the company name to Maxius"
+                    },
+                    {
+                        "id": 1,
+                        "title": "2020",
+                        "type": "Second construction of an artificial intelligence-based adaptive security system"
+                    },
+                    {
+                        "id": 2,
+                        "title": "2019",
+                        "type": "Development of Genome Analysis System Semiconductor and High Performance Storage"
+                    },
+                    {
+                        "id": 3,
+                        "title": "",
+                        "type": ""
+                    },
+                    {
+                        "id": 4,
+                        "title": "",
+                        "type": ""
+                    },
+                    {
+                        "id": 5,
+                        "title": "",
+                        "type": ""
+                    },
+                    {
+                        "id": 6,
+                        "title": " 2015",
+                        "type": ""
+                    },
+                    {
+                        "id": 12,
+                        "title": "2010",
+                        "type": ""
+                    },
+                    {
+                        "id": 7,
+                        "title": "1996",
+                        "type": ""
+                    }
+                ]
+            },
+            {
+                "id": 1,
+                "title": "Partners",
+                "children": [
+                    {
+                        "id": 0,
+                        "title": "120 corporate partners",
+                        "type": "Corporation"
+                    },
+                    {
+                        "id": 1,
+                        "title": "350 additional corporate partners",
+                        "type": "General public"
+                    },
+                    {
+                        "id": 2,
+                        "title": "165 additional corporate partners",
+                        "type": "National defense"
+                    },
+                    {
+                        "id": 3,
+                        "title": "",
+                        "type": ""
+                    },
+                    {
+                        "id": 4,
+                        "title": "",
+                        "type": ""
+                    },
+                    {
+                        "id": 5,
+                        "title": "",
+                        "type": ""
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Patent",
+                "children": [
+                    {
+                        "id": 0,
+                        "title": "Patent for security system",
+                        "type": "First establishment of an artificial intelligence- based adaptive security system"
+                    },
+                    {
+                        "id": 1,
+                        "title": "Patent for system semiconductor",
+                        "type": "Development of small computers using high-performance system semiconductors"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Patent certified by TPC",
+                        "type": "International TPC certification"
+                    },
+                    {
+                        "id": 3,
+                        "title": "",
+                        "type": ""
+                    },
+                    {
+                        "id": 4,
+                        "title": "",
+                        "type": ""
+                    },
+                    {
+                        "id": 5,
+                        "title": "",
+                        "type": ""
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Awards",
+                "children": [
+                    {
+                        "id": 0,
+                        "title": "KR Sejong the Great Award",
+                        "type": "The best performance and energy-saving technology"
+                    },
+                    {
+                        "id": 1,
+                        "title": "KR Excellent Product Certificate",
+                        "type": "Certification of excellent products in the field of high-performance system quality servers"
+                    },
+                    {
+                        "id": 2,
+                        "title": "KR Green Technology Certificate",
+                        "type": "Environmentally friendly with highest perfor- mance and maximum efficiency"
+                    },
+                    {
+                        "id": 3,
+                        "title": "",
+                        "type": ""
+                    },
+                    {
+                        "id": 4,
+                        "title": "",
+                        "type": ""
+                    }
+                ]
+            }
+        ]
+    },
+    "thirdPage": {
+        "product": {
+            "text": "Maxius is the only self-developed semiconductor company who builds servers with high technology. As we provides solutions specialized for intelligent data centers and the IT industry, we will develop into a growing company in global market."
+        },
+        "technology": {
+            "text": "Maxius is the only self-developed semiconductor company who builds servers with high technology. As we provides solutions specialized for intelligent data centers and the IT industry, we will develop into a growing company in global market."
+        },
+        "application": {
+            "text": "Maxius is the only self-developed semiconductor company who builds servers with high technology. As we provides solutions specialized for intelligent data centers and the IT industry, we will develop into a growing company in global market."
+        },
+        "blockchain": {
+            "text": ""
+        }
+    },
+    "first": {
+        "subTitle1": "Maxius is a company that develops its own system",
+        "subTitle2": "semiconductors and manufactures and sells",
+        "subTitle3": "computers for high-performance servers. We",
+        "subTitle4": "supply equipment and solutions to clients in",
+        "subTitle5": "various cutting edge fields.",
+        "note": "Together, we will be the best in value and speed."
+    }
+}
