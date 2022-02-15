@@ -1,9 +1,8 @@
 .page-three {
     height: 100vh;
-    background: url("../../../../Assets//Images/banner-03.png");
+    background: #1b0080;
     user-select: none;
     width: 100%;
-    background-size: cover;
     overflow: hidden;
     .logo {
         position: absolute;
@@ -14,24 +13,69 @@
         font-weight: bold;
         color: #fff;
     }
-    @media screen and (max-width: 840px) {
-        background-size: cover;
-    }
     .page-three-container {
-        top: 0;
-        position: absolute;
-        width: 70%;
-        color: #fff;
-        text-align: left;
-        height: 100%;
-        position: relative;
-        left: -3%;
-        right: 0;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        padding: 0;
-        z-index: 5;
+        text-align: center;
+        .item-service{
+            background-color: #19065f;
+            max-width: 395px;
+            margin-right: 40px;
+            .title-item-service{
+                font-family: Montserrat-SemiBold;
+                font-size: 40.5px;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1;
+                letter-spacing: normal;
+                text-align: left;
+                color: #604da6;
+                padding-left: 21px;
+                padding-top: 59px;
+                padding-bottom: 20px;
+            }
+            .item-service-content{
+                .title-service{
+                    font-family: Montserrat-SemiBold;
+                    font-size: 14.5px;
+                    font-weight: 600;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.93;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #604da6;
+                    padding-left: 23px;
+                    padding-top: 42px;
+                }
+                .content-service{
+                    font-family: NotoSansCJKkr;
+                    font-size: 14.5px;
+                    font-weight: 300;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.93;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #604da6;
+                    padding: 14px 0 71px 23px;
+                }
+            }
+            &:hover{
+                transform: scale(1.2);
+                transition: all .25s ease-in-out;
+                .title-item-service{
+                    color: #ccee5d;
+                }
+                .item-service-content{
+                    .title-service{
+                        color: #ccee5d;
+                    }
+                    .content-service{
+                        color: #ccee5d;
+                    }
+                }
+            }
+        }
     }
     &-content {
         display: flex;
