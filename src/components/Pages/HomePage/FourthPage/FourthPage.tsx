@@ -7,7 +7,6 @@ import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
 
 function FourthPage() {
-    const location = useLocation()
     const { t } = useTranslation();
     const data = t('fourth', { returnObjects: true }) as any;
     var settings = {
@@ -44,13 +43,13 @@ function FourthPage() {
         ]
     };
     
-    const renderData = data.story.map((val: any) => (
-        <div className={"item-story item-" + (val.title)} key={val.id}>
-            <p className={"title title" + (val.title)}>{val.title}</p>
+    const renderData = data.history.map((val: any) => (
+        <div className={"item-history item-" + (val.year)} key={val.id}>
+            <p className="title-year">{val.year}</p>
 
             <div className="item-box">
                 {
-                    val.children.map((child: any) => (
+                    val.childrenYears.map((child: any) => (
                         <div className="item-box-item" key={child.id}>
                             <h2>{child.title}</h2>
                             <p>{child.type}</p>
@@ -64,8 +63,8 @@ function FourthPage() {
         <div className="fourth-page">
            
             <div className='fourth-container'>
-                <h1 className="fourth-title">story</h1>
-                <div className="list-story">
+                <h1 className="fourth-title">History</h1>
+                <div className="list-history">
                     <Slider {...settings}>
                         {renderData}
                     </Slider>

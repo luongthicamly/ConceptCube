@@ -2,18 +2,16 @@ import React, { useEffect, useLayoutEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import { useTranslation } from 'react-i18next';
 import { NavLink, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
-import arrow from '../../Assets/Images/arrow-icon.png';
 import i18n from '../../i18next/i18next';
 import Contact from '../Pages/Contact/Contact';
 import Home from '../Pages/HomePage/Home';
 import logo from '../../Assets/Images/logo-icon.png'
 import './SideMenu.scss';
-const test = require('../../Assets/Images/Test.docx');
+import Works from '../Pages/Works';
+import Team from '../Pages/Team/Team';
 
 const SideMenu = () => {
-    const [selected, setSelected] = useState<'ko' | 'en'>('en');
-    const [showItemBrochure, setShowItemBrochure] = useState<boolean>(false);
-    const [showItemProposal, setShowItemProposal] = useState<boolean>(false);
+    const [selected, setSelected] = useState<'ko' | 'en'>('ko');
     const [colorMenu, setColorMenu] = useState<string>('#fff');
     const location = useLocation();
     const navigate = useNavigate();
@@ -31,42 +29,12 @@ const SideMenu = () => {
             setSelected(lang);
         }
     };
-
-    const handleClickBrochure = () => {
-        setShowItemProposal(false);
-        setShowItemBrochure(!showItemBrochure);
-    };
-    const handleClickProposal = () => {
-        setShowItemBrochure(false);
-        setShowItemProposal(!showItemProposal);
-    };
     const handleClickHome = () => {
         setCloseSideMenu(false);
-        setShowItemProposal(false);
-        setShowItemBrochure(false);
     };
 
-    useLayoutEffect(() => {
-        const item1 = document.querySelectorAll('.item-1');
-        const item2 = document.querySelectorAll('.item-2');
-        const item3 = document.querySelectorAll('.item-3');
-        const item4 = document.querySelectorAll('.item-4');
-        const item5 = document.querySelectorAll('.item-5');
-
-        const revealAnim = () => {
-            const TLFade = gsap.timeline({});
-
-            TLFade.fromTo(item1, { y: '-100%', opacity: 0 }, { y: '0%', opacity: 1, duration: 0.1 });
-            TLFade.fromTo(item2, { y: '-100%', opacity: 0, delay: -0.1 }, { y: '0%', opacity: 1, duration: 0.1 });
-            TLFade.fromTo(item3, { y: '-100%', opacity: 0, delay: -0.2 }, { y: '0%', opacity: 1, duration: 0.1 });
-            TLFade.fromTo(item4, { y: '-100%', opacity: 0, delay: -0.3 }, { y: '0%', opacity: 1, duration: 0.1 });
-            TLFade.fromTo(item5, { y: '-100%', opacity: 0, delay: -0.4 }, { y: '0%', opacity: 1, duration: 0.1 });
-        };
-
-        revealAnim();
-    }, [showItemBrochure, showItemProposal]);
     useEffect(() => {
-        if (location.hash === '#fourthPage') {
+        if (location.hash === '#fourthPage' || location.pathname === '/works' || location.pathname === '/contact') {
             const el: any = document.querySelectorAll('#fp-nav ul li a');
             el?.forEach((e) => e?.classList.add('active-color-dot'));
             setColorMenu('#1b0080');
@@ -75,18 +43,19 @@ const SideMenu = () => {
             el?.forEach((e) => e?.classList.remove('active-color-dot'));
             setColorMenu('#fff');
         }
-    }, [location.hash]);
+    }, [location.hash, location.pathname]);
     useLayoutEffect(() => {
         handleChangeLanguage(selected);
     }, []);
-
     return (
         <>
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="works" element={<Works />} />
+                <Route path="teams" element={<Team />} />
                 <Route path="contact" element={<Contact />} />
             </Routes>
-            <div className={'logo' + (location.hash === '#secondPage' ? 'd-none' :'')} >
+            <div className={`logo ${location.hash === '#firstPage' ? '' :'d-none'}`} >
                 <a
                     href="#firstPage"
                     onClick={(e) => {
@@ -108,14 +77,14 @@ const SideMenu = () => {
                         <div className="side-menu-container-change-lang-wrapper">
                             <div
                                 style={{ color: colorMenu }}
-                                className={`change-lang en ${selected === 'en' ? 'select' : ''}`}
+                                className={`change-lang en ${selected === 'en' ? 'select' : ''} ${location.hash === '#fourthPage'  ? 'color-four' : ''}`}
                                 onClick={() => handleChangeLanguage('en')}
                             >
                                 EN
                             </div>
                             <div
                                 style={{ color: colorMenu }}
-                                className={`change-lang ko ${selected === 'ko' ? 'select' : ''}`}
+                                className={`change-lang ko ${selected === 'ko' ? 'select' : ''} ${location.hash === '#fourthPage'  ? 'color-four' : ''}`}
                                 onClick={() => handleChangeLanguage('ko')}
                             >
                                 KR
@@ -141,70 +110,28 @@ const SideMenu = () => {
                                 </div>
                             </div>
                             <div className="title-list">
-                                <NavLink className="list" to="/" onClick={() => handleClickHome()}>
-                                    <li>Home</li>
-                                </NavLink>
-                                <div className="list" onClick={() => handleClickBrochure()}>
-                                    <li className={`${showItemBrochure ? 'choose' : ''}`}>Brochure</li>
-                                    <ul className={`brochure-list ${showItemBrochure ? '' : 'disable'}`}>
-                                        <li className="brochure-item item-1">
-                                            <a href={test} download="love BlackPink">
-                                                Download-1
-                                            </a>
-                                            <img src={arrow} alt=""></img>
-                                        </li>
-                                        <li className="brochure-item item-2">
-                                            <a href={test} download="love BlackPink">
-                                                Download-2
-                                            </a>
-                                            <img src={arrow} alt=""></img>
-                                        </li>
-                                        <li className="brochure-item item-3">
-                                            <a href={test} download="love BlackPink">
-                                                Download-3
-                                            </a>
-                                            <img src={arrow} alt=""></img>
-                                        </li>
-                                        <li className="brochure-item item-4">
-                                            <a href={test} download="love BlackPink">
-                                                Download-4
-                                            </a>
-                                            <img src={arrow} alt=""></img>
-                                        </li>
-                                        <li className="brochure-item item-5">
-                                            <a href={test} download="love BlackPink">
-                                                Download-5
-                                            </a>
-                                            <img src={arrow} alt=""></img>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className="list" onClick={() => handleClickProposal()}>
-                                    <li className={`${showItemProposal ? 'choose' : ''}`}>Proposal</li>
-                                    <ul className={`proposal-list ${showItemProposal ? '' : 'disable'}`}>
-                                        <li className="proposal-item item-1">
-                                            <a href={test} download="love BlackPink">
-                                                Download-1
-                                            </a>
-                                            <img src={arrow} alt=""></img>
-                                        </li>
-                                        <li className="proposal-item item-2">
-                                            <a href={test} download="love BlackPink">
-                                                Download-2
-                                            </a>
-                                            <img src={arrow} alt=""></img>
-                                        </li>
-                                        <li className="proposal-item item-3">
-                                            <a href={test} download="love BlackPink">
-                                                Download-3
-                                            </a>
-                                            <img src={arrow} alt=""></img>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <NavLink className="list" to="/contact" onClick={() => handleClickHome()}>
-                                    <li>Contact</li>
-                                </NavLink>
+                                <ul>
+                                    <li>
+                                        <NavLink className="list" to="/" onClick={() => handleClickHome()}>
+                                            Home
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink className="list" to="/works" onClick={() => handleClickHome()}>
+                                            Works
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink className="list" to="/teams" onClick={() => handleClickHome()}>
+                                            Teams
+                                        </NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink className="list" to="/contact" onClick={() => handleClickHome()}>
+                                            Contact
+                                        </NavLink>
+                                    </li>
+                                </ul>
                             </div>
                             <div className="info-wrapper">
                                 <p id="address" className={selected === 'ko' ? 'ko-font' : ''}>

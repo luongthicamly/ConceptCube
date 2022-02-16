@@ -7,7 +7,7 @@
         text-align: center;
         padding: 60px 0;
         animation: fade 1s ease;
-        font-family: "Montserrat", sans-serif;
+        font-family: "Montserrat-ExtraLight";
         height: 18%;
     }
 
@@ -30,6 +30,7 @@
             animation: fade 1.5s ease;
             display: flex;
             flex-direction: column;
+            font-family: "Montserrat-ExtraLight";
             .address_one {
                 animation: fade 2s ease;
                 padding: 12.8%;
@@ -40,19 +41,21 @@
                 p {
                     font-size: 16px;
                     font-weight: 700;
-                    font-family: "Montserrat-bold", sans-serif;
+                    
                     span {
                         font-weight: normal;
                     }
                 }
             }
             .address_two {
-                margin-top: 100px;
+                margin-bottom: 100px;
                 text-align: right;
                 padding: 12.8%;
-                p {
+                p a{
                     font-size: 14px;
                     font-weight: lighter;
+                    color: white;
+                    text-decoration: none;
                 }
                 .mail_one {
                     .text1 {

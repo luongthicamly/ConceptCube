@@ -9,15 +9,18 @@ const afterLoad = (origin: any, destination: any, direction: any) => {
             });
             gsap.from(".second-page-content", {
                 autoAlpha: 0,
-                x: -880,
-                duration: 1.5,
+                x: -420,
+                duration: 1,
                 ease: "power4.out",
-                delay: .1
+                delay: 0.3,
             });
             break;
         case 2:
             gsap.from(".page-three-content", {
                 autoAlpha: 0,
+                y: -220,
+                duration: 1.3,
+                ease: "power4.out",
             });
             gsap.from(".title_first", {
                 autoAlpha: 0,
@@ -57,7 +60,7 @@ const afterLoad = (origin: any, destination: any, direction: any) => {
                 duration: 1,
                 ease: "power4.out",
             });
-            gsap.from(".list-story", {
+            gsap.from(".list-history", {
                 autoAlpha: 0,
                 x: -420,
                 duration: 1,
@@ -69,21 +72,28 @@ const afterLoad = (origin: any, destination: any, direction: any) => {
             gsap.from(".fifth-wrapper", {
                 autoAlpha: 0,
             });
+            gsap.from(".fifth-title",{
+                autoAlpha: 0,
+                x: 220,
+                duration: 1,
+                ease: "power4.out",
+            })
             gsap.from(".fifth-name", {
                 autoAlpha: 0,
-                x: 420,
+                x: -220,
                 stagger: 0.1,
                 duration: 1,
                 ease: "power4.out",
             });
             gsap.from(".fifth-contact", {
                 autoAlpha: 0,
-                y: -220,
+                y: -50,
                 stagger: 0.1,
-                duration: 1,
+                duration: 2,
                 ease: "power4.out",
                 delay: .2,
             });
+            
             break;
     }
 };

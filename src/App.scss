@@ -18,6 +18,32 @@ h3 {
     font-family: "Montserrat-Medium";
     src: url("./Assets/fonts/Montserrat-Medium.ttf");
 }
+@font-face {
+    font-family: "Montserrat-ExtraBold";
+    src: url("./Assets/fonts/Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "Noto-Sans-KR-Thin";
+    src: url("./Assets/fonts/NotoSansCJKkr-Thin.otf");
+}
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("./Assets/fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("./Assets/fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url("./Assets/fonts/Montserrat-Light.ttf");
+}
+@font-face {
+    font-family: "Montserrat-ExtraLight";
+    src: url("./Assets/fonts/Montserrat-ExtraLight.ttf");
+}
+
 html,
 body {
     -webkit-overflow-scrolling: auto;
@@ -82,7 +108,7 @@ section {
     transform: scaleX(calc(10 / 3));
     transform-origin: right;
     transition: 0.1s;
-    background-color: #99dd6e !important;
+    background-color: #5a9834  !important;
     &:hover {
         transform: scaleX(4);
     }

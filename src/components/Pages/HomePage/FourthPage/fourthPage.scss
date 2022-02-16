@@ -1,7 +1,7 @@
 .fourth-page {
     width: 100%;
     height: 100vh;
-    background-color: #fff;
+    background-color: #99dd6e;
     position: relative;
     overflow-y: hidden;
     .logo{
@@ -31,16 +31,18 @@
     user-select: none;
 
     h1 {
-        font-size: 98.5px;
-        font-weight: bold;
-        margin-bottom: 40px;
+        font-size: 80px;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.51;
+        letter-spacing: normal;
         text-align: center;
-        text-transform: uppercase;
-        font-family: 'Roboto-Bold';
-        letter-spacing: 4.93px;
-        line-height: 1.66;
+        font-family: 'Montserrat-ExtraBold';
+        color: #1b0080;
+        margin-bottom: 110px;
     }
-    .list-story{
+    .list-history{
         position: relative;
         .slick-dots {
             position: absolute;
@@ -71,67 +73,27 @@
                 }
             }
         }
-        .slick-slide{
-            &:nth-child(1){
-                .item-box-item{
-                    h2{
-                        line-height: 26px;
-                    }
-                   &:nth-child(1){
-                        p{
-                            line-height: 52.5px;
-                        }
-                   }
-                   &:nth-child(2), &:nth-child(3){
-                        h2{
-                            line-height: 52.5px;
-                        }
-                        p{
-                           line-height: 19.5px;
-                        }
-                   }
-                    
-                }
-            }
-            &:nth-child(2){
-                .item-box-item{
-                    h2{
-                        line-height: 26px;
-                    }
-                    p{
-                        line-height: 52.5px;
-                    }
-                }
-            }
-            &:nth-child(3), &:nth-child(4){
-                .item-box-item{
-                    h2{
-                        line-height: 26px;
-                    }
-                    p{
-                        line-height: 19.5px;
-                    }
-                }
-            }
-        }
         .item-box {
             height: 250px;
             overflow-y: auto;
             color: #8b8b8b;
             padding: 10px 15px;
             
+            .item-box-item{
+                margin-top: 30px;
+            }
             h2,
             p {
-                font-size: 13px;
+                font-size: 12px;
                 letter-spacing: 0.65px;
             }
             h2 {
                 font-weight: bold;
                 color: black;
-                font-family: "Roboto-Medium";
+                font-family: 'Montserrat-Medium','Noto-Sans-KR-Thin';
             }
             p{
-                font-family: "Roboto-Light";
+                font-family: 'Montserrat-Regular','Noto-Sans-KR-Thin';
             }
         }
         .slick-current {
@@ -142,25 +104,30 @@
                 padding-left: 0 !important;
             }
         }
-        .item-story {
+        .item-history {
             text-align: left;
-            .title {
-                font-size: 39.5px;
-                font-family: 'Roboto-Bold';
+            .title-year {
+                font-size: 40.5px;
                 padding-left: 10px;
                 margin-bottom: 0;
                 transform: none !important;
-                line-height: 2;
+                line-height: 1;
+                font-weight: 800;
+                font-stretch: normal;
+                font-style: normal;
+                color: #1b0080;
+                font-family: 'Montserrat-ExtraBold';
+                margin-bottom: 21px;
             }
             ::-webkit-scrollbar {
-                width: 1px;
+                width: 2px;
             }
             ::-webkit-scrollbar-track {
-                background: #cdcdcd;
+                background: #6daa8a;
             }
             &:hover {
                 ::-webkit-scrollbar-thumb {
-                    background: black;
+                    background: #132070;
                 }
             }
         }
@@ -173,7 +140,7 @@
             font-size: 30px;
             font-weight: bold;
         }
-        .item-story{
+        .item-history{
             .title{
                 font-size: 25px !important;
             }
@@ -188,26 +155,5 @@
     }
     .fourth-container{
         top: 60% !important;
-    }
-}
-@media screen and (max-width: 1500px) {
-    .fourth-container{
-        .list-story{
-            .slick-slide{
-                &:nth-child(1){
-                    .item-box-item{
-                        h2{
-                            line-height: 26px;
-                        }
-                       &:nth-child(1){
-                            p{
-                                line-height: 19.5px;
-                            }
-                       }
-                        
-                    }
-                }
-            }
-        }
     }
 }

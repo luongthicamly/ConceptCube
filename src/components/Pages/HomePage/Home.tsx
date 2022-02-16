@@ -31,7 +31,7 @@ const Home = () => {
             scrollingSpeed={700}
             onLeave={onLeave}
             afterLoad={afterLoad}
-            normalScrollElements={'.item-story'}
+            normalScrollElements={'.item-history'}
             render={() => {
                 return (
                     <>
