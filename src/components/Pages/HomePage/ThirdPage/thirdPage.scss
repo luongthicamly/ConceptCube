@@ -20,7 +20,6 @@
             overflow: unset;
         }
         .item-service{
-            background-color: #19065f;
             max-width: 365px;
             margin-right: 40px;
             .title-item-service{
@@ -32,7 +31,6 @@
                 line-height: 1;
                 letter-spacing: normal;
                 text-align: left;
-                color: #604da6;
                 padding-left: 21px;
                 padding-top: 59px;
                 padding-bottom: 20px;
@@ -53,12 +51,8 @@
                     line-height: 1.93;
                     letter-spacing: normal;
                     text-align: left;
-                    color: #604da6;
                     padding-left: 23px;
                     padding-top: 42px;
-                    &.d-none{
-                        display: none;
-                    }
                 }
                 .content-service{
                     font-family: NotoSansCJKkr;
@@ -69,7 +63,6 @@
                     line-height: 1.93;
                     letter-spacing: normal;
                     text-align: left;
-                    color: #604da6;
                     padding: 14px 23px 71px 23px;
                     &.d-none{
                         display: none;
@@ -77,6 +70,38 @@
                     &.content-en{
                         padding: 14px 23px 30px 23px !important;
                         min-height: 230px;
+                    }
+                }
+            }
+            
+        }
+    }
+    &-content {
+        height: 100%;
+        max-width: 1570px;
+        margin: 0 auto;
+        margin-top: 200px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .page-three{
+        .item-service{
+            background-color: #19065f;
+            .title-item-service{
+                color: #604da6;
+            }
+            .title-service{
+                &.d-none{
+                    display: none;
+                }
+            }
+            .content-service{
+                color: #604da6;
+            }
+            .item-service-img{
+                img{
+                    &.img-mobile{
+                        display: none;
                     }
                 }
             }
@@ -103,11 +128,37 @@
             }
         }
     }
-    &-content {
-        height: 100%;
-        max-width: 1570px;
-        margin: 0 auto;
-        margin-top: 200px;
+}
+@media screen and (max-width: 1023px) {
+    .page-three{
+        .item-service{
+            background-color: #673dc7;
+            cursor: pointer;
+
+            .title-item-service{
+                color: #ccee5d;
+                padding-top: 40px;
+            }
+            .item-service-content{
+                .title-service{
+                    color: #ccee5d;
+                }
+                .content-service{
+                    color: #ccee5d;
+                    padding: 14px 23px 25px 23px;
+                }
+            }
+            .item-service-img{
+                img{
+                    &.img-desktop{
+                        display: none;
+                    }
+                }
+            }
+            &:hover{
+                transform: unset !important;
+            }
+        }
     }
 }
 @media screen and (max-width: 1600px) {
@@ -132,12 +183,12 @@
                 .slick-next {
                     right: 43%;
                     z-index: 9999;
-                    top: 103%;
+                    top: 104%;
                 }
                 .slick-prev {
                     left: 43%;
                     z-index: 9999;
-                    top: 103%;
+                    top: 104%;
                 }
                 .slick-dots{
                     bottom: -35px;
@@ -149,7 +200,7 @@
         }
     }
 }
-@media screen and (max-height: 1081px) {
+@media screen and (max-height: 1079px) {
     .page-three{
         &-content {
             margin-top: 130px;
@@ -183,7 +234,7 @@
                 min-height: 614px !important;
                 .content-service{
                     font-size: 11px !important;
-                    padding: 14px 23px 40px 23px !important;
+                    padding: 14px 16px 40px 15px !important;
                     &.content-en{
                         min-height:175px !important;
                     }
@@ -256,11 +307,11 @@
             .slick-slider{
                 .slick-next {
                     right: 38%;
-                    top: 103.5%;
+                    top: 104%;
                 }
                 .slick-prev {
                     left: 38%;
-                    top: 103.5%;
+                    top: 104%;
                 }
             }
         }
@@ -318,11 +369,11 @@
             .slick-slider{
                 .slick-next {
                     right: 28%;
-                    top: 103.5%;
+                    top: 104%;
                 }
                 .slick-prev {
                     left: 28%;
-                    top: 103.5%;
+                    top: 104%;
                 }
             }
         }

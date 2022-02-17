@@ -29,7 +29,7 @@ function PageThree() {
         slidesToScroll: 1,
         responsive: [
             {
-                breakpoint: 1025,
+                breakpoint: 1023,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
@@ -67,7 +67,8 @@ function PageThree() {
                                 Game<br/>Development
                             </div>
                             <div className="item-service-img">
-                                <img src={image1}  alt=''/>
+                                <img src={image1}  alt='' className="img-desktop"/>
+                                <img src={ImgOn1}  alt='' className="img-mobile"/>
                             </div>
                             <div className="item-service-content">
                                 <p className={"title-service"+(image1 === ImgOn1 ? '' : ' d-none')}>Game Development</p>
@@ -79,7 +80,7 @@ function PageThree() {
                                     {data.gammeDevelopment.text5}<br/>
                                     {data.gammeDevelopment.text6}
                                 </p>
-                                <p className={`content-service content-en ${i18n.language === 'ko' ? 'd-none' : ''}`}>
+                                <p className={`content-service content-desktop content-en ${i18n.language === 'ko' ? 'd-none' : ''}`}>
                                     {data.gammeDevelopment.text}
                                 </p>
                             </div>
@@ -91,7 +92,8 @@ function PageThree() {
                                 UI<br/>Design
                             </div>
                             <div className="item-service-img">
-                                <img src={image2}  alt=''/>
+                                <img src={image2}  alt='' className="img-desktop"/>
+                                <img src={ImgOn2}  alt='' className="img-mobile"/>
                             </div>
                             <div className="item-service-content">
                                 <p className={"title-service"+(image2 === ImgOn2 ? '' : ' d-none')}>UI design</p>
@@ -106,6 +108,7 @@ function PageThree() {
                                 <p className={`content-service content-en ${i18n.language === 'ko' ? 'd-none' : ''}`}>
                                     {data.uiDesign.text}
                                 </p>
+                                
                             </div>
                         </a>
                     </div>
@@ -115,7 +118,8 @@ function PageThree() {
                                 SI
                             </div>
                             <div className="item-service-img">
-                                <img src={image3}  alt=''/>
+                                <img src={image3}  alt='' className="img-desktop"/>
+                                <img src={ImgOn3}  alt='' className="img-mobile"/>
                             </div>
                             <div className="item-service-content">
                                 <p className={"title-service"+(image3 === ImgOn3 ? '' : ' d-none')}>SI</p>
@@ -127,7 +131,7 @@ function PageThree() {
                                     {data.si.text5}<br/>
                                     {data.si.text6}
                                 </p>
-                                <p className={`content-service content-en ${i18n.language === 'ko' ? 'd-none' : ''}`}>
+                                <p className={`content-service content-desktop content-en ${i18n.language === 'ko' ? 'd-none' : ''}`}>
                                     {data.si.text}
                                 </p>
                             </div>
@@ -139,7 +143,8 @@ function PageThree() {
                                 Game<br/>Marketing
                             </div>
                             <div className="item-service-img">
-                                <img src={image4}  alt=''/>
+                                <img src={image4}  alt='' className="img-desktop"/>
+                                <img src={ImgOn4}  alt='' className="img-mobile"/>
                             </div>
                             <div className="item-service-content">
                                 <p className={"title-service"+(image4 === ImgOn4 ? '' : ' d-none')}>Game Marketing</p>
@@ -151,7 +156,7 @@ function PageThree() {
                                     {data.gameMarketing.text5}<br/>
                                     {data.gameMarketing.text6}
                                 </p>
-                                <p className={`content-service content-en ${i18n.language === 'ko' ? 'd-none' : ''}`}>
+                                <p className={`content-service content-desktop content-en ${i18n.language === 'ko' ? 'd-none' : ''}`}>
                                     {data.gameMarketing.text}
                                 </p>
                             </div>
