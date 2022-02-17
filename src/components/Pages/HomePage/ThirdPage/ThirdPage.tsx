@@ -60,9 +60,8 @@ function PageThree() {
         <div className="page-three">
             <div className="page-three-container">
                 <div className="page-three-content">
-            
                     <Slider {...settings}>
-                    <div className="item-service">
+                    <div className="item-service item-gamme-development">
                         <a onMouseEnter={() => setImage1(ImgOn1)} onMouseLeave={() => setImage1(ImgOff1)}>
                             <div className="title-item-service">
                                 Game<br/>Development
@@ -86,7 +85,7 @@ function PageThree() {
                             </div>
                         </a>
                     </div>
-                    <div className="item-service">
+                    <div className="item-service item-ui-design">
                         <a onMouseEnter={() => setImage2(ImgOn2)} onMouseLeave={() => setImage2(ImgOff2)}>
                             <div className="title-item-service">
                                 UI<br/>Design
@@ -110,7 +109,7 @@ function PageThree() {
                             </div>
                         </a>
                     </div>
-                    <div className="item-service">
+                    <div className="item-service item-si">
                         <a onMouseEnter={() => setImage3(ImgOn3)} onMouseLeave={() => setImage3(ImgOff3)}>
                             <div className="title-item-service">
                                 SI
@@ -134,7 +133,7 @@ function PageThree() {
                             </div>
                         </a>
                     </div>
-                    <div className="item-service">
+                    <div className="item-service item-game-marketing">
                         <a onMouseEnter={() => setImage4(ImgOn4)} onMouseLeave={() => setImage4(ImgOff4)}>
                             <div className="title-item-service">
                                 Game<br/>Marketing

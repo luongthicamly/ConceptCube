@@ -18,33 +18,33 @@ const afterLoad = (origin: any, destination: any, direction: any) => {
         case 2:
             gsap.from(".page-three-content", {
                 autoAlpha: 0,
-                y: -220,
-                duration: 1.3,
-                ease: "power4.out",
+                // y: -220,
+                // duration: 1.3,
+                // ease: "power4.out",
             });
-            gsap.from(".title_first", {
+            gsap.from(".item-gamme-development", {
                 autoAlpha: 0,
-                y: 420,
+                x: -420,
                 duration: 0.7,
                 ease: "power4.out",
             });
-            gsap.from(".title_second", {
+            gsap.from(".item-ui-design", {
                 autoAlpha: 0,
-                y: -420,
+                x: 420,
                 duration: 0.7,
                 ease: "power4.out",
                 delay: 0.3,
             });
-            gsap.from(".title_third", {
+            gsap.from(".item-si", {
                 autoAlpha: 0,
-                y: 420,
+                x: 420,
                 duration: 0.7,
                 ease: "power4.out",
                 delay: 0.6,
             });
-            gsap.from(".title_fourth", {
+            gsap.from(".item-game-marketing", {
                 autoAlpha: 0,
-                y: -420,
+                x: 420,
                 duration: 0.7,
                 ease: "power4.out",
                 delay: 0.9,
