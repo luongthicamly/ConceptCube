@@ -40,12 +40,6 @@
                     left: 50%;
                     transform: translate(-50%, -50%);
                     border: none;
-                    @media (max-width: 1024px) {
-                        left: 57%;
-                    }
-                    @media (max-width: 484px) {
-                        left: 90%;
-                    }
                 }
             }
 
@@ -187,6 +181,20 @@
                 .inner-content {
                     .content-container{
                         bottom: 20% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-height: 600px) {
+    .first-page{
+        .first-container{
+            .inner-content{
+                .content-container{
+                    left: 160px;
+                    h1{
+                        font-size: 95px;
                     }
                 }
             }

@@ -11,12 +11,12 @@ import ImgSlide5 from '../../../../Assets/Images/slide/console-img-5.png';
 import ImgSlide6 from '../../../../Assets/Images/slide/console-img-6.png';
 function SecondPage() {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 1500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
       };
     return (
