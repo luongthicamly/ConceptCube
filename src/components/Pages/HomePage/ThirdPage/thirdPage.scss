@@ -6,6 +6,7 @@
     overflow: hidden;
     display: flex;
     align-items: center;
+    justify-content: center;
     .logo {
         position: absolute;
         top: 50px;
@@ -17,7 +18,7 @@
     }
     .page-three-container {
         text-align: center;
-        width: 100%;
+        width: 95%;
         .slick-list{
             overflow: unset;
         }
@@ -54,7 +55,7 @@
                     letter-spacing: normal;
                     text-align: left;
                     padding-left: 23px;
-                    padding-top: 42px;
+                    padding-top: 10px;
                 }
                 .content-service{
                     font-family: NotoSansCJKkr;
@@ -65,7 +66,7 @@
                     line-height: 1.93;
                     letter-spacing: normal;
                     text-align: left;
-                    padding: 14px 23px 71px 23px;
+                    padding: 14px 23px 25px 23px;
                     &.d-none{
                         display: none;
                     }
@@ -94,7 +95,7 @@
             }
             .title-service{
                 &.d-none{
-                    display: none;
+                    color: transparent !important;
                 }
             }
             .content-service{
@@ -124,7 +125,7 @@
                     }
                     .content-service{
                         color: #ccee5d;
-                        padding: 14px 23px 25px 23px;
+                        padding: 14px 23px 55px 23px;
                     }
                 }
             }
@@ -208,7 +209,7 @@
             .item-service{
                 min-height: 630px;
                 .content-service{
-                    font-size: 13px !important;
+                    font-size: 12px !important;
                 }
             }
         }
@@ -229,7 +230,7 @@
                 min-height: 614px !important;
                 .content-service{
                     font-size: 11px !important;
-                    padding: 14px 16px 40px 15px !important;
+                    padding: 14px 16px 30px 15px !important;
                     &.content-en{
                         min-height:175px !important;
                     }
@@ -244,14 +245,14 @@
             }
             .page-three-container{
                 .item-service{
-                    min-height: 524px !important;
+                    min-height: 475px !important;
                     .title-item-service{
                         padding-top: 20px;
                         padding-bottom: 0;
                     }
                     .content-service{
                         &.content-en{
-                            min-height:140px !important;
+                            min-height:170px !important;
                         }
                     }
                     .item-service-content{
@@ -277,7 +278,7 @@
                     }
                     .content-service{
                         &.content-en{
-                            min-height:140px !important;
+                            min-height:150px !important;
                         }
                     }
                     .item-service-content{
@@ -309,18 +310,18 @@
                     font-size: 30px;
                 }
                 .content-service{
-                    font-size: 11px !important;
+                    font-size: 10px !important;
                 }
             }
         }
     }
 }
-@media screen and (max-width: 1142px) and (min-width: 1070px) {
+@media screen and (max-width: 1110px) and (min-width: 769px) {
     .page-three{
         .page-three-container{
             .item-service{
                 .content-service{
-                    font-size: 10.5px !important;
+                    font-size: 9px !important;
                 }
             }
         }
@@ -346,17 +347,6 @@
                     .content-service{
                         font-size: 9px !important;
                     }
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 970px) {
-    .page-three{
-        .page-three-container{
-            .item-service{
-                .content-service{
-                    font-size: 10px !important;
                 }
             }
         }
