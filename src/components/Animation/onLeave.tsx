@@ -10,21 +10,6 @@ const onLeave = (origin: any, destination: any, direction: any) => {
                 ease: "power4.out",
                 delay: 0.5,
             });
-            gsap.from(".about-text", {
-                autoAlpha: 0,
-                y: -780,
-                duration: 1.7,
-                ease: "power4.out",
-                delay: 0.5,
-            });
-            gsap.from(".company", {
-                autoAlpha: 0,
-                x: -500,
-                duration: 2,
-                delay: 0.5,
-                ease: "power4.out",
-            });
-            gsap.to(".maxius-logo", { color: "#222222" })
             break;
         case 1:
             gsap.to(".title-page-one", { visibility: "hidden" });
