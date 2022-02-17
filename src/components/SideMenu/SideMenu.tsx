@@ -47,6 +47,7 @@ const SideMenu = () => {
     useLayoutEffect(() => {
         handleChangeLanguage(selected);
     }, []);
+    console.log(location.hash)
     return (
         <>
             <Routes>
@@ -55,7 +56,7 @@ const SideMenu = () => {
                 <Route path="teams" element={<Team />} />
                 <Route path="contact" element={<Contact />} />
             </Routes>
-            <div className={`logo ${location.hash === '#firstPage' ? '' :'d-none'}`} >
+            <div className={`logo ${location.hash === '#firstPage' || location.hash === '' ? '' :'d-none'}`} >
                 <a
                     href="#firstPage"
                     onClick={(e) => {
